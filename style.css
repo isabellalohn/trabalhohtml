@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+}
+
+/*Estilos da logo*/
+
+.logo {
+  margin-left: 1vh;
+  width: 8vh;
+  height: 8vh;
+  background-color: beige;
+  border-radius: 100%;
+  display: flex;
+  border: solid rgb(121, 117, 107) 1px;
+}
+
+.logoimg {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  border-radius: 100%;
+}
+
+/*Herobackground feito com auxilio dos materiaais presentes em html5up.net*/
+/*Herobackground estilos*/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  /*justify-content: center;
+      align-items: center;
+      text-align: center;*/
+  color: #fff;
+  overflow: hidden;
+  background-image: url(hero-background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #c5c1c1;
+  z-index: 2;
+  font-size: 2.5vh;
+}
+
+/*Titulo e frase do hero*/
+
+.vitta {
+  margin: 0;
+  font-size: 8vh;
+  font-family: 'Cormorant Garamond', serif;
+  color: #c5c1c1;
+}
+
+.frase {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c5c1c1;
+}
+
+/*Estilos da header e nav*/
+
+.header {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  min-height: 90px;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.701);
+  z-index: 3;
+  font-family: arial;
+}
+
+.nav {
+  display: flex;
+  gap: clamp(10px, 4vw, 50px);
+  margin: none;
+}
+
+.options {
+  color: rgb(204, 202, 202);
+  text-decoration: none;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+.options:hover {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-bottom: solid #3f5a47 2px;
+  color: #3f5a47;
+  cursor: pointer;
+}
+
+.faleconosco {
+  color: rgb(204, 202, 202);
+  text-decoration: none;
+  padding: 9px;
+  background-color: #676f58;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.faleconosco:hover {
+  color: seagreen;
+  cursor: pointer;
+}
+
+/*Estilos da section espaço, sobre*/
+
+#sobre {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  background: #676f58;
+  color: rgb(204, 202, 202);
+  flex-wrap: wrap;
+}
+
+.contSobre {
+  margin-top: 2vh;
+  width: 50%;
+  flex: 1 1 300px;
+  font-family: arial;
+}
+
+.textoSobre {
+  margin-top: 2vh;
+  width: 60%;
+  font-size: 4vh;
+  color: #c5c1c1;
+}
+
+.espaco {
+  font-size: 6vh;
+  color: #c6cbc6;
+}
+
+.imgs {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  flex: 1 1 300px;
+}
+
+.imgs img {
+  height: 300px;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/*Estilos da section serviços*/
+
+#servicos {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.nossosServicos {
+  color: #3f5a47;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-family: arial;
+  font-size: 4vh;
+}
+
+.cards-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-family: arial;
+  font-size: 3vh;
+  padding: 40px;
+}
+
+.card {
+  background: #f0ece6;
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 250px;
+  text-align: left;
+}
+
+.bolinha {
+  width: 20px;
+  height: 20px;
+  background: #7a8b6f;
+  border-radius: 50%;
+}
+
+.agende {
+  font-family: arial;
+  font-size: 3vh;
+  text-decoration: none;
+  color: white;
+  background: #3f5a47;
+  padding: 2vh;
+  border-radius: 2vh;
+}
+
+.agende:hover {
+  background: #7a8b6f;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*Estilos da section contato e localização*/
+
+#contato {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #d3d1d1;
+  padding: 30px;
+  min-height: 300px;
+  font-family: arial;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  font-family: arial;
+}
+
+.mapa {
+  margin-top: 5px;
+}
+
+.localizacao {
+  margin-top: 0.5px;
+}
+
+.social-links {
+  margin: 5px 0;
+}
+
+.insta {
+  width: 35px;
+  height: 35px;
+}
+
+
+.back-in {
+ margin-top: 5px;
+  text-align: center;
+}
+
+.back {
+  text-decoration: none;
+  color: #3f5a47;
+  font-size: 20px;
+}
+
+.back:hover {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-bottom: solid seagreen 2px;
+  color: seagreen;
+  cursor: pointer;
+}
+
+.fale-title {
+  color: #3f5a47;
+}
+
+.faleTel {
+  color: black;
+  text-decoration: none;
+}
+
+.faleTel:hover {
+  color: seagreen;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}  
+
+footer {
+  background: #676f58;
+  color: rgb(204, 202, 202);
+  text-align: center;
+  padding: 20px;
+  font-family: arial;
+}
